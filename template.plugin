@@ -1,0 +1,14 @@
+desc:Electribe ESX controller
+
+// here the sliderdefinition code is generated
+%sliderdef%
+
+@slider
+
+// no fraction only integers
+%sliderdeffract%
+
+@block
+
+// here the blockcode is generated
+%block% 

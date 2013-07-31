@@ -1,0 +1,231 @@
+// channel, nrpn (decimal), name of slider
+0,1540,1-pitch/glide
+0,1547,1-pan
+0,1548,1-eg time
+0,1546,1-level
+0,1545,1-startpoint
+0,1542,1-cutof
+0,1543,1-reso
+0,1544,1-egint
+0,1556,1-speed
+0,1555,1-depth
+0,1554,1-type
+0,1558,1-bmp sync
+0,1557,1-dest
+0,1549,1-amp eg
+0,1550,1-roll
+0,1551,1-reverse
+0,1553,1-fx select
+0,1552,1-fx send
+0,1536,1-sample
+0,1572,2-pitch/glide
+0,1579,2-pan
+0,1580,2-eg time
+0,1578,2-level
+0,1577,2-startpoint
+0,1574,2-cutof
+0,1575,2-reso
+0,1576,2-egint
+0,1588,2-speed
+0,1587,2-depth
+0,1586,2-type
+0,1590,2-bmp sync
+0,1589,2-dest
+0,1581,2-amp eg
+0,1582,2-roll
+0,1583,2-reverse
+0,1585,2-fx select
+0,1584,2-fx send
+0,1568,2-sample
+0,1604,3-pitch/glide
+0,1611,3-pan
+0,1612,3-eg time
+0,1610,3-level
+0,1609,3-startpoint
+0,1606,3-cutof
+0,1607,3-reso
+0,1608,3-egint
+0,1620,3-speed
+0,1619,3-depth
+0,1618,3-type
+0,1622,3-bmp sync
+0,1621,3-dest
+0,1613,3-amp eg
+0,1614,3-roll
+0,1615,3-reverse
+0,1617,3-fx select
+0,1616,3-fx send
+0,1600,3-sample
+0,1636,4-pitch/glide
+0,1643,4-pan
+0,1644,4-eg time
+0,1642,4-level
+0,1641,4-startpoint
+0,1638,4-cutof
+0,1639,4-reso
+0,1640,4-egint
+0,1652,4-speed
+0,1651,4-depth
+0,1650,4-type
+0,1654,4-bmp sync
+0,1653,4-dest
+0,1645,4-amp eg
+0,1646,4-roll
+0,1647,4-reverse
+0,1649,4-fx select
+0,1648,4-fx send
+0,1632,4-sample
+0,1668,5-pitch/glide
+0,1675,5-pan
+0,1676,5-eg time
+0,1674,5-level
+0,1673,5-startpoint
+0,1670,5-cutof
+0,1671,5-reso
+0,1672,5-egint
+0,1684,5-speed
+0,1683,5-depth
+0,1682,5-type
+0,1686,5-bmp sync
+0,1685,5-dest
+0,1677,5-amp eg
+0,1678,5-roll
+0,1679,5-reverse
+0,1681,5-fx select
+0,1680,5-fx send
+0,1664,5-sample
+0,1700,6A-pitch/glide
+0,1707,6A-pan
+0,1708,6A-eg time
+0,1706,6A-level
+0,1705,6A-startpoint
+0,1702,6A-cutof
+0,1703,6A-reso
+0,1704,6A-egint
+0,1716,6A-speed
+0,1715,6A-depth
+0,1714,6A-type
+0,1718,6A-bmp sync
+0,1717,6A-dest
+0,1709,6A-amp eg
+0,1710,6A-roll
+0,1711,6A-reverse
+0,1713,6A-fx select
+0,1712,6A-fx send
+0,1696,6A-sample
+0,1732,6Bpitch/glide
+0,1739,6Bpan
+0,1740,6Beg time
+0,1738,6Blevel
+0,1737,6Bstartpoint
+0,1734,6Bcutof
+0,1735,6Breso
+0,1736,6Begint
+0,1748,6Bspeed
+0,1747,6Bdepth
+0,1746,6Btype
+0,1750,6Bbmp sync
+0,1749,6Bdest
+0,1741,6Bamp eg
+0,1742,6Broll
+0,1743,6Breverse
+0,1745,6Bfx select
+0,1744,6Bfx send
+0,1728,6Bsample
+0,1764,7A-pitch/glide
+0,1771,7A-pan
+0,1772,7A-eg time
+0,1770,7A-level
+0,1769,7A-startpoint
+0,1766,7A-cutof
+0,1767,7A-reso
+0,1768,7A-egint
+0,1780,7A-speed
+0,1779,7A-depth
+0,1778,7A-type
+0,1782,7A-bmp sync
+0,1781,7A-dest
+0,1773,7A-amp eg
+0,1774,7A-roll
+0,1775,7A-reverse
+0,1777,7A-fx select
+0,1776,7A-fx send
+0,1760,7A-sample
+0,1796,7B-pitch/glide
+0,1803,7B-pan
+0,1804,7B-eg time
+0,1802,7B-level
+0,1801,7B-startpoint
+0,1798,7B-cutof
+0,1799,7B-reso
+0,1800,7B-egint
+0,1812,7B-speed
+0,1811,7B-depth
+0,1810,7B-type
+0,1814,7B-bmp sync
+0,1813,7B-dest
+0,1805,7B-amp eg
+0,1806,7B-roll
+0,1807,7B-reverse
+0,1809,7B-fx select
+0,1808,7B-fx send
+0,1792,7B-sample
+0,1824,KB1-sample
+0,1824,KB2-sample
+0,1892,STRETCH1-pitch/glide
+0,1899,STRETCH1-pan
+0,1900,STRETCH1-eg time
+0,1898,STRETCH1-level
+0,1897,STRETCH1-startpoint
+0,1894,STRETCH1-cutof
+0,1895,STRETCH1-reso
+0,1896,STRETCH1-egint
+0,1908,STRETCH1-speed
+0,1907,STRETCH1-depth
+0,1906,STRETCH1-type
+0,1910,STRETCH1-bmp sync
+0,1909,STRETCH1-dest
+0,1901,STRETCH1-amp eg
+0,1902,STRETCH1-roll
+0,1903,STRETCH1-reverse
+0,1905,STRETCH1-fx select
+0,1904,STRETCH1-fx send
+0,1888,STRETCH1-sample
+0,1924,STRETCH2-pitch/glide
+0,1931,STRETCH2-pan
+0,1932,STRETCH2-eg time
+0,1930,STRETCH2-level
+0,1929,STRETCH2-startpoint
+0,1926,STRETCH2-cutof
+0,1927,STRETCH2-reso
+0,1928,STRETCH2-egint
+0,1940,STRETCH2-speed
+0,1939,STRETCH2-depth
+0,1938,STRETCH2-type
+0,1942,STRETCH2-bmp sync
+0,1941,STRETCH2-dest
+0,1933,STRETCH2-amp eg
+0,1934,STRETCH2-roll
+0,1935,STRETCH2-reverse
+0,1937,STRETCH2-fx select
+0,1936,STRETCH2-fx send
+0,1920,STRETCH2-sample
+0,1956,SLICE-pitch/glide
+0,1963,SLICE-pan
+0,1964,SLICE-eg time
+0,1962,SLICE-level
+0,1961,SLICE-startpoint
+0,1958,SLICE-cutof
+0,1959,SLICE-reso
+0,1960,SLICE-egint
+0,1972,SLICE-speed
+0,1971,SLICE-depth
+0,1970,SLICE-type
+0,1974,SLICE-bmp sync
+0,1973,SLICE-dest
+0,1965,SLICE-amp eg
+0,1966,SLICE-roll
+0,1967,SLICE-reverse
+0,1969,SLICE-fx select
+0,1968,SLICE-fx send
+0,1952,SLICE-sample

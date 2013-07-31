@@ -1,0 +1,12 @@
+(slider%index% != oldslider%index%) ? (
+  channel = %channel%;
+  nrpn = %nrpn%;
+  msb = nrpn/128|0;
+  lsb = nrpn-(msb*128);
+  value = slider%index%;
+  midisend(0, (176+channel),99|(msb   * 256));
+  midisend(0, (176+channel),98|(lsb   * 256));
+  midisend(0, (176+channel),06|(value * 256));
+  oldslider%index% = slider%index%;
+);
+

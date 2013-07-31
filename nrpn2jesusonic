@@ -1,0 +1,73 @@
+#!/bin/bash 
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+tpl_sliderdef='slider%index%:0<0,127,1>%label%' 
+tpl_sliderdeffract='slider%index% = floor(slider%index%);'
+jscode_tpl="$(cat template.plugin)"
+
+generate(){
+  [[ ! -n $1   ]] && echo "Usage: ./nrpn2jesusonic <nrprn-file.txt> [maxsliders-per-plugin]" && exit
+  [[ ! -f "$1" ]] && echo "file "$1" not found" && exit 1
+  file="$1"
+
+  plugin=1;
+  index=1;
+  sliders=0;
+  maxsliders="$2"
+  cat "$file" | grep -v "//" |  while read line; do 
+    channel=$(_parseCSVColumn "$line" 1);
+    nrpn=$(_parseCSVColumn "$line" 2);
+    label=$(_parseCSVColumn "$line" 3);
+    _fetch "$tpl_sliderdef" "$index" "$label" >> /tmp/$0.sliderdef.tmp
+    _fetch "$tpl_sliderdeffract" "$index" "$label" >> /tmp/$0.sliderdeffract.tmp
+    _fetch "$(cat template.block)" "$index" "$label" "$channel" "$nrpn" >> /tmp/$0.block.tmp
+    tput el; printf "\r[x] processing controller $index, nrpn=$nrpn,label=$label"
+    ((index=index+1))
+    ((sliders=sliders+1))
+    if [[ $sliders == $maxsliders ]]; 
+      then generatePluginCode yourplugin$plugin
+      printf "\n[x] generated 'yourplugin$plugin'\n"
+      ((plugin=plugin+1))
+      sliders=0
+    fi
+  done
+  printf "\n[x] done \o/"
+}
+
+generatePluginCode(){
+  cat "template.plugin" | while read line; do 
+    if [[ "$line" == *%sliderdef%* ]];      then line="$(cat /tmp/$0.sliderdef.tmp)"; fi 
+    if [[ "$line" == *%sliderdeffract%* ]]; then line="$(cat /tmp/$0.sliderdeffract.tmp)"; fi
+    if [[ "$line" == *%block%* ]];          then line="$(cat /tmp/$0.block.tmp)"; fi
+    echo "$line"
+  done > "$1"
+  sed -i -e "s///g" "$1"     # remove dirt
+  rm /tmp/$0.*.tmp             # remove temporary files
+}
+
+_fetch(){
+  _tpl="$1"
+  _index="$2"
+  _label="$3"
+  _channel="$4"
+  _nrpn="$5"
+  echo "$_tpl" | sed "s|%index%|$_index|g" | sed "s|%label%|$_label|g" | sed "s|%nrpn%|$_nrpn|g" | sed "s|%channel%|$_channel|g"
+}
+
+_parseCSVColumn(){
+  echo "$1" | sed 's/,,,/###/g' | sed 's/,,/##/g' | sed 's/,/#/g' | cut -f$2 -d"#" | sed 's/"//g'
+}
+
+generate "$1" "$2"
