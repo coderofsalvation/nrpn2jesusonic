@@ -6,7 +6,7 @@ Bash script which easily converts midi nrpn-descriptions into jesusonic plugins 
 Demo
 ====
 
-<div><script id="playterm-MjAxMy0wNy9ucnBuMmplc3Vzb25pY3R0eXJlYy0xMzc1MjcxMTExfDgweDI0" type="text/javascript" src="http://playterm.org/js/?hash=MjAxMy0wNy9ucnBuMmplc3Vzb25pY3R0eXJlYy0xMzc1MjcxMTExfDgweDI0" class="size:80x24"></script></div>
+see a demorun here: [http://playterm.org/r/nrpn2jesusonic-1375271262](http://playterm.org/r/nrpn2jesusonic-1375271262)
 
 What is jesusonic
 =================
